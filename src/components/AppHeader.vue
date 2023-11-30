@@ -4,9 +4,12 @@ export default {
 	name: 'AppHeader',
 	data() {
         return {
-    
         }
     },
+    methods() {
+
+    },
+    mounted() {}
 }
 </script>
 
