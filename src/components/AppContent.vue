@@ -28,8 +28,8 @@ export default {
 </script>
 
 <template>
-    <div class="bg-grey">
-        <div class="container">
+    <div class="bg-dark-subtle">
+        <div class="container d-flex flex-wrap justify-content-between">
             <AppCard v-for="brewery in store.breweries"  :birreria="brewery" />
         </div>
     </div>
