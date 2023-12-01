@@ -1,6 +1,8 @@
 <script>
 import AppSearch from './AppSearch.vue';
 import axios from 'axios'
+import { store } from "../store.js"
+
 
 
 export default {
@@ -10,6 +12,7 @@ export default {
     },
 	data() {
         return {
+            store
         }
     },
     methods: {
