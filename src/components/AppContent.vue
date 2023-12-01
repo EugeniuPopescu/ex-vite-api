@@ -15,12 +15,12 @@ export default {
     },
     mounted() {
         this.getBreweries();
-        console.log(this.store.breweries);
     },
     methods: {
         getBreweries() {
             axios.get(this.store.apiUrl).then(risultato => {
-				this.store.breweries = risultato.data;
+                this.store.breweries = risultato.data;
+                console.log(risultato.data);
 			});
         }
     },

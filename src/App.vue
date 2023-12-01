@@ -14,15 +14,20 @@ export default {
 </script>
 
 <template>
-	<AppHeader />
+	<header>
+		<AppHeader />
+	</header>
 
 	<main class="main">
 		<AppContent />
 	</main>
 
-	<AppFooter />
+	<footer>
+		<AppFooter />
+	</footer>
 </template>
 
 <style scoped>
+
 </style>
 
