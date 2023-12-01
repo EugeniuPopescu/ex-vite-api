@@ -31,6 +31,7 @@ export default {
     <div class="bg-dark-subtle">
         <div class="container d-flex flex-wrap justify-content-between">
             <AppCard v-for="brewery in store.breweries"  :birreria="brewery" />
+            <span class="fs-1" v-if="store.breweries == 0">Si è verificato un ERRORE</span>
         </div>
     </div>
 </template>

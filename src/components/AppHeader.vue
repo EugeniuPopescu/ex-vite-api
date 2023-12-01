@@ -17,9 +17,15 @@ export default {
     },
     methods: {
         cerca() {
-            axios.get(`https://api.openbrewerydb.org/v1/breweries/search?query={${this.store.searchString}}` ).then(risultato => {
+            let address = `https://api.openbrewerydb.org/v1/breweries/search?query={${this.store.searchString}}`
+
+            axios.get( address ).then(risultato => {
                 
                 this.store.breweries = risultato.data;
+
+            }).catch(errore => {
+                this.store.breweries = [];
+                console.error('IUBIULHNLUINLIUNLIUJ');
             });
         }
     },
